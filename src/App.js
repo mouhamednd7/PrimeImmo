@@ -1,25 +1,17 @@
 import React from "react";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import KeyServices from "./components/KeyServices";
-import PropertyTrends from "./components/PropertyTrends";
-import KeyParticipants from "./components/KeyParticipants";
-import AdditionalInfo from "./components/AdditionalInfo";
-import Footer from "./components/Footer";
-import "./styles.css"; // Import the CSS file
+import Map from "./components/Map";
+import PropertyListings from "./components/PropertyListings";
+import "./styles.css";
 
 function App() {
   return (
     <div>
       <Header />
-      <Hero />
-      <About />
-      <KeyServices />
-      <PropertyTrends />
-      <KeyParticipants />
-      <AdditionalInfo />
-      <Footer />
+      <div className="main-layout">
+        <Map />
+        <PropertyListings />
+      </div>
     </div>
   );
 }
